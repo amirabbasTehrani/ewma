@@ -90,8 +90,8 @@ export default {
       const $this = this
       this.$axios.$get('https://api.themoviedb.org/3/discover/movie', {
         params: {
-          'primary_release_date.gte': this.date[0],
-          'primary_release_date.lte': this.date[1],
+          'primary_release_date.gte': this.date ? this.date[0] : '',
+          'primary_release_date.lte': this.date ? this.date[1] : '',
           page: this.page,
           api_key: this.$config.apiKey
         }
