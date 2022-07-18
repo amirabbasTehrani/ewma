@@ -16,8 +16,8 @@ export default {
     ]
   },
   publicRuntimeConfig: {
-    apiKey: process.env.API_KEY,
-    imagePrefix: process.env.IMAGE_PREFIX
+    apiKey: 'f62f750b70a8ef11dad44670cfb6aa57',
+    imagePrefix: 'https://image.tmdb.org/t/p/w500'
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
