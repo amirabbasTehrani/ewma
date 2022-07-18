@@ -61,8 +61,9 @@
               </td>
               <td class="text-right">
                 <star-rating
-                  v-model="rating"
+                  v-model="movie.vote_average"
                   inline
+                  :max-rating="10"
                   :increment="0.1"
                   :star-size="20"
                   read-only
@@ -158,9 +159,6 @@ export default {
     }
   },
   computed: {
-    rating () {
-      return this.movie.vote_average / 2
-    },
     cast () {
       const items = this.credits.cast
       let sortedItems = items.sort((a, b) => (a.popularity < b.popularity) ? 1 : ((b.popularity < a.popularity) ? -1 : 0))
