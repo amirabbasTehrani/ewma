@@ -29,10 +29,6 @@ export default {
       default: 1,
       type: Number
     },
-    totalResults: {
-      default: 1,
-      type: Number
-    },
     totalPages: {
       default: 1,
       type: Number

@@ -1,7 +1,6 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ewma',
+    title: 'EWMA',
     htmlAttrs: {
       lang: 'en'
     },
@@ -19,46 +18,27 @@ export default {
     apiKey: 'f62f750b70a8ef11dad44670cfb6aa57',
     imagePrefix: 'https://image.tmdb.org/t/p/w500'
   },
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/fontawesome.js',
     { src: '~/plugins/star-rating.js', mode: 'client' },
     { src: '~/plugins/datepicker.js', mode: 'client' }
   ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss'
   ],
-  tailwindcss: {
-    config: {
-      plugins: ['flowbite/plugin']
-    }
-  },
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios'
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/'
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
       plugins: {

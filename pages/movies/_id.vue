@@ -141,9 +141,7 @@
   </div>
 </template>
 <script>
-
 export default {
-
   async asyncData ({ $axios, params, $config }) {
     const movie = await $axios.$get('https://api.themoviedb.org/3/movie/' + params.id + '?api_key=' + $config.apiKey)
     const credits = await $axios.$get('https://api.themoviedb.org/3/movie/' + params.id + '/credits?api_key=' + $config.apiKey)

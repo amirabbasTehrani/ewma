@@ -1,4 +1,4 @@
-# ewma
+# EWMA Code Challenge
 
 ## Build Setup
 

@@ -52,15 +52,12 @@
     <ThePagination
       v-model="page"
       :total-pages="data.total_pages"
-      :total-results="data.total_results"
       class="mt-44 mb-24"
     />
   </div>
 </template>
-
 <script>
 export default {
-
   async asyncData ({ $axios, $config }) {
     const data = await $axios.$get('https://api.themoviedb.org/3/discover/movie?api_key=' + $config.apiKey)
     const genres = await $axios.$get('https://api.themoviedb.org/3/genre/movie/list?api_key=' + $config.apiKey)
