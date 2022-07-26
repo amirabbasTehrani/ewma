@@ -15,7 +15,7 @@
 
       <button
         class="ml-auto bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded-3xl"
-        @click="page=1 , getMovies()"
+        @click="page === 1 ? getMovies() : (page=1 , getMovies())"
       >
         search
       </button>
